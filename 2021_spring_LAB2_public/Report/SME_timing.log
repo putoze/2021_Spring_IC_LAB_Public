@@ -1,0 +1,76 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : SME
+Version: N-2017.09-SP2
+Date   : Wed Jan 17 20:33:36 2024
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: cal_cnt_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cal_cnt_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  cal_cnt_reg[2]/CK (DFFRX2)               0.00       0.00 r
+  cal_cnt_reg[2]/QN (DFFRX2)               0.37       0.37 r
+  U5974/Y (INVXL)                          0.10       0.47 f
+  U3899/Y (NOR2XL)                         0.26       0.74 r
+  U4124/Y (NAND2X1)                        0.09       0.82 f
+  U2965/Y (CLKBUFX3)                       0.25       1.07 f
+  U3378/Y (NOR2XL)                         0.15       1.22 r
+  U3058/Y (CLKINVX1)                       0.15       1.37 f
+  U2971/Y (INVXL)                          0.54       1.91 r
+  U4919/Y (AOI22XL)                        0.13       2.04 f
+  U4921/Y (NAND4XL)                        0.20       2.24 r
+  U4926/Y (NOR2X1)                         0.07       2.31 f
+  U4937/Y (NAND3X1)                        0.09       2.40 r
+  U5044/Y (OAI22XL)                        0.13       2.53 f
+  U5045/Y (NOR3X1)                         0.12       2.65 r
+  U3364/Y (NAND3XL)                        0.11       2.76 f
+  U5049/Y (AOI21X1)                        0.12       2.87 r
+  U5050/Y (OAI21X1)                        0.10       2.98 f
+  U5357/Y (AOI2BB2X2)                      0.15       3.13 r
+  U5812/Y (NAND3X2)                        0.08       3.21 f
+  U5813/Y (NOR2BX2)                        0.09       3.29 r
+  U3140/Y (AND3X2)                         0.15       3.44 r
+  U3013/Y (NAND2X1)                        0.06       3.51 f
+  U5965/Y (AOI21X1)                        0.18       3.69 r
+  U5966/Y (INVX3)                          0.10       3.79 f
+  U5969/Y (OAI21X4)                        0.10       3.89 r
+  U5970/Y (NAND2X1)                        0.14       4.03 f
+  U5972/Y (OAI21X4)                        0.14       4.17 r
+  U5976/Y (AOI21X2)                        0.09       4.26 f
+  U5977/Y (OAI21X2)                        0.11       4.37 r
+  U6104/CO (ADDHXL)                        0.17       4.54 r
+  U5979/Y (XOR2X1)                         0.15       4.69 f
+  U4008/Y (AOI21XL)                        0.15       4.83 r
+  U5986/Y (INVXL)                          0.06       4.89 f
+  cal_cnt_reg[5]/D (DFFRX2)                0.00       4.89 f
+  data arrival time                                   4.89
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  cal_cnt_reg[5]/CK (DFFRX2)               0.00       5.00 r
+  library setup time                      -0.11       4.89
+  data required time                                  4.89
+  -----------------------------------------------------------
+  data required time                                  4.89
+  data arrival time                                  -4.89
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

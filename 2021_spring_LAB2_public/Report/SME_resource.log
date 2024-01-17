@@ -1,0 +1,395 @@
+ 
+****************************************
+Report : resources
+Design : SME
+Version: N-2017.09-SP2
+Date   : Wed Jan 17 20:33:36 2024
+****************************************
+
+
+Resource Report for this hierarchy in file
+        /home/rain/IC_LAB/IC_training/2021_Spring_NCTU_ICLAB-main/Lab02/SME.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| gte_x_2        | DW_cmp         | width=6    | gte_64 (SME.v:64)          |
+| sub_x_7        | DW01_sub       | width=5    | sub_113_aco (SME.v:113)    |
+| sub_x_8        | DW01_sub       | width=5    | sub_116_aco (SME.v:116)    |
+| eq_x_15        | DW_cmp         | width=8    | eq_159 (SME.v:159)         |
+| eq_x_16        | DW_cmp         | width=8    | eq_159_G2 (SME.v:159)      |
+| eq_x_17        | DW_cmp         | width=8    | eq_159_G3 (SME.v:159)      |
+| eq_x_18        | DW_cmp         | width=8    | eq_159_G4 (SME.v:159)      |
+| eq_x_19        | DW_cmp         | width=8    | eq_159_G5 (SME.v:159)      |
+| eq_x_20        | DW_cmp         | width=8    | eq_159_G6 (SME.v:159)      |
+| eq_x_21        | DW_cmp         | width=8    | eq_159_G7 (SME.v:159)      |
+| eq_x_22        | DW_cmp         | width=8    | eq_159_G8 (SME.v:159)      |
+| add_x_31       | DW01_inc       | width=4    | add_253 (SME.v:253)        |
+| lte_x_51       | DW_cmp         | width=6    | lte_336 (SME.v:336)        |
+| lt_x_69        | DW_cmp         | width=4    | lt_356 (SME.v:356)         |
+| lt_x_70        | DW_cmp         | width=4    | lt_356_I2 (SME.v:356)      |
+| lt_x_71        | DW_cmp         | width=4    | lt_356_I3 (SME.v:356)      |
+| lt_x_72        | DW_cmp         | width=4    | lt_356_I4 (SME.v:356)      |
+| lt_x_73        | DW_cmp         | width=4    | lt_356_I5 (SME.v:356)      |
+| lt_x_74        | DW_cmp         | width=4    | lt_356_I6 (SME.v:356)      |
+| lt_x_75        | DW_cmp         | width=4    | lt_356_I7 (SME.v:356)      |
+| lt_x_77        | DW_cmp         | width=6    | lt_366_I2 (SME.v:366)      |
+| lt_x_78        | DW_cmp         | width=6    | lt_366_I3 (SME.v:366)      |
+| lt_x_79        | DW_cmp         | width=6    | lt_366_I4 (SME.v:366)      |
+| lt_x_80        | DW_cmp         | width=6    | lt_366_I5 (SME.v:366)      |
+| lt_x_81        | DW_cmp         | width=6    | lt_366_I6 (SME.v:366)      |
+| lt_x_82        | DW_cmp         | width=6    | lt_366_I7 (SME.v:366)      |
+| lt_x_83        | DW_cmp         | width=6    | lt_366_I8 (SME.v:366)      |
+| gte_x_116      | DW_cmp         | width=6    | gte_451 (SME.v:451)        |
+| add_x_127      | DW01_add       | width=6    | add_366_2_I2 (SME.v:366)   |
+|                |                |            | add_366_I2 (SME.v:366)     |
+| add_x_128      | DW01_add       | width=6    | add_366_2_I3 (SME.v:366)   |
+|                |                |            | add_366_I3 (SME.v:366)     |
+| add_x_129      | DW01_add       | width=6    | add_366_2_I4 (SME.v:366)   |
+|                |                |            | add_366_I4 (SME.v:366)     |
+| add_x_130      | DW01_add       | width=6    | add_366_2_I5 (SME.v:366)   |
+|                |                |            | add_366_I5 (SME.v:366)     |
+| add_x_131      | DW01_add       | width=6    | add_366_2_I6 (SME.v:366)   |
+|                |                |            | add_366_I6 (SME.v:366)     |
+| add_x_132      | DW01_add       | width=6    | add_366_2_I7 (SME.v:366)   |
+|                |                |            | add_366_I7 (SME.v:366)     |
+| add_x_133      | DW01_add       | width=6    | add_366_2_I8 (SME.v:366)   |
+|                |                |            | add_366_I8 (SME.v:366)     |
+| DP_OP_547J1_122_6630            |            |                            |
+|                | DP_OP_547J1_122_6630 |      |                            |
+| DP_OP_548J1_123_2509            |            |                            |
+|                | DP_OP_548J1_123_2509 |      |                            |
+| DP_OP_549J1_124_3595            |            |                            |
+|                | DP_OP_549J1_124_3595 |      |                            |
+| DP_OP_550J1_125_8353            |            |                            |
+|                | DP_OP_550J1_125_8353 |      |                            |
+| DP_OP_551J1_126_774             |            |                            |
+|                | DP_OP_551J1_126_774 |       |                            |
+| DP_OP_552J1_127_774             |            |                            |
+|                | DP_OP_552J1_127_774 |       |                            |
+| DP_OP_553J1_128_774             |            |                            |
+|                | DP_OP_553J1_128_774 |       |                            |
+| DP_OP_554J1_129_774             |            |                            |
+|                | DP_OP_554J1_129_774 |       |                            |
+| DP_OP_555J1_130_774             |            |                            |
+|                | DP_OP_555J1_130_774 |       |                            |
+| DP_OP_556J1_131_774             |            |                            |
+|                | DP_OP_556J1_131_774 |       |                            |
+| DP_OP_557J1_132_1308            |            |                            |
+|                | DP_OP_557J1_132_1308 |      |                            |
+| DP_OP_550_136_389               |            |                            |
+|                | DP_OP_550_136_389 |         |                            |
+=============================================================================
+
+Datapath Report for DP_OP_547J1_122_6630
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_547J1_122_6630 | add_63 (SME.v:63) add_366_2 (SME.v:366)             |
+|                      | lt_366 (SME.v:366)                                  |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 4     |                                          |
+| I2    | PI   | Unsigned | 4     |                                          |
+| O1    | PO   | Unsigned | 5     | I1 + $unsigned(1'b1) ( SME.v:63 SME.v:366 ) |
+| O2    | PO   | Unsigned | 1     | O1 < I2 (SME.v:366)                      |
+==============================================================================
+
+Datapath Report for DP_OP_548J1_123_2509
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_548J1_123_2509 | sub_64 (SME.v:64) add_64 (SME.v:64)                 |
+|                      | add_64_2 (SME.v:64) sub_65 (SME.v:65)               |
+|                      | add_65 (SME.v:65) eq_65 (SME.v:65)                  |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 6     |                                          |
+| I2    | PI   | Unsigned | 1     |                                          |
+| I3    | PI   | Unsigned | 4     |                                          |
+| I4    | PI   | Unsigned | 4     |                                          |
+| I5    | PI   | Unsigned | 4     |                                          |
+| I6    | PI   | Unsigned | 6     |                                          |
+| T540  | IFO  | Unsigned | 6     | I1 + I2 ( SME.v:64 SME.v:65 )            |
+| T538  | IFO  | Signed   | 6     | -I5 + T540 (SME.v:65)                    |
+| O1    | PO   | Signed   | 6     | -I3 + I4 + T540 (SME.v:64)               |
+| O2    | PO   | Unsigned | 1     | I6 == $unsigned(T538) (SME.v:65)         |
+==============================================================================
+
+Datapath Report for DP_OP_549J1_124_3595
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_549J1_124_3595 | mult_add_229_aco (SME.v:229)                        |
+|                      | add_229_aco (SME.v:229)                             |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 6     |                                          |
+| I2    | PI   | Unsigned | 1     |                                          |
+| T155  | IFO  | Unsigned | 6     | I1 * I2 (SME.v:229)                      |
+| O1    | PO   | Unsigned | 6     | T155 + $unsigned(1'b1) (SME.v:229)       |
+==============================================================================
+
+Datapath Report for DP_OP_550J1_125_8353
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_550J1_125_8353 | add_311 (SME.v:311) add_336_I2 (SME.v:336)          |
+|                      | lte_336_I2 (SME.v:336)                              |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 6     |                                          |
+| I2    | PI   | Unsigned | 6     |                                          |
+| O1    | PO   | Unsigned | 7     | I1 + $unsigned(1'b1) ( SME.v:311 SME.v:336 ) |
+| O2    | PO   | Unsigned | 1     | O1 <= I2 (SME.v:336)                     |
+==============================================================================
+
+Datapath Report for DP_OP_551J1_126_774
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_551J1_126_774  | add_336_I3 (SME.v:336) lte_336_I3 (SME.v:336)       |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 6     |                                          |
+| I2    | PI   | Unsigned | 6     |                                          |
+| T57   | IFO  | Unsigned | 7     | I1 + $unsigned(2'b10) (SME.v:336)        |
+| O1    | PO   | Unsigned | 1     | T57 <= I2 (SME.v:336)                    |
+==============================================================================
+
+Datapath Report for DP_OP_552J1_127_774
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_552J1_127_774  | add_336_I4 (SME.v:336) lte_336_I4 (SME.v:336)       |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 6     |                                          |
+| I2    | PI   | Unsigned | 6     |                                          |
+| T59   | IFO  | Unsigned | 7     | I1 + $unsigned(2'b11) (SME.v:336)        |
+| O1    | PO   | Unsigned | 1     | T59 <= I2 (SME.v:336)                    |
+==============================================================================
+
+Datapath Report for DP_OP_553J1_128_774
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_553J1_128_774  | add_336_I5 (SME.v:336) lte_336_I5 (SME.v:336)       |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 6     |                                          |
+| I2    | PI   | Unsigned | 6     |                                          |
+| T61   | IFO  | Unsigned | 7     | I1 + $unsigned(3'b100) (SME.v:336)       |
+| O1    | PO   | Unsigned | 1     | T61 <= I2 (SME.v:336)                    |
+==============================================================================
+
+Datapath Report for DP_OP_554J1_129_774
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_554J1_129_774  | add_336_I6 (SME.v:336) lte_336_I6 (SME.v:336)       |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 6     |                                          |
+| I2    | PI   | Unsigned | 6     |                                          |
+| T63   | IFO  | Unsigned | 7     | I1 + $unsigned(3'b101) (SME.v:336)       |
+| O1    | PO   | Unsigned | 1     | T63 <= I2 (SME.v:336)                    |
+==============================================================================
+
+Datapath Report for DP_OP_555J1_130_774
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_555J1_130_774  | add_336_I7 (SME.v:336) lte_336_I7 (SME.v:336)       |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 6     |                                          |
+| I2    | PI   | Unsigned | 6     |                                          |
+| T65   | IFO  | Unsigned | 7     | I1 + $unsigned(3'b110) (SME.v:336)       |
+| O1    | PO   | Unsigned | 1     | T65 <= I2 (SME.v:336)                    |
+==============================================================================
+
+Datapath Report for DP_OP_556J1_131_774
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_556J1_131_774  | add_336_I8 (SME.v:336) lte_336_I8 (SME.v:336)       |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 6     |                                          |
+| I2    | PI   | Unsigned | 6     |                                          |
+| T67   | IFO  | Unsigned | 7     | I1 + $unsigned(3'b111) (SME.v:336)       |
+| O1    | PO   | Unsigned | 1     | T67 <= I2 (SME.v:336)                    |
+==============================================================================
+
+Datapath Report for DP_OP_557J1_132_1308
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_557J1_132_1308 | add_451 (SME.v:451) sub_451 (SME.v:451)             |
+|                      | sub_451_2 (SME.v:451)                               |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Signed   | 6     |                                          |
+| I2    | PI   | Unsigned | 4     |                                          |
+| I3    | PI   | Unsigned | 4     |                                          |
+| I4    | PI   | Unsigned | 1     |                                          |
+| O1    | PO   | Signed   | 6     | I1 + I2 - I3 - I4 (SME.v:451)            |
+==============================================================================
+
+Datapath Report for DP_OP_550_136_389
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_550_136_389    | mult_add_307_aco (SME.v:307) C4642 (SME.v:296)      |
+|                      | add_297 (SME.v:297) add_307_aco (SME.v:307)         |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 6     |                                          |
+| I2    | PI   | Unsigned | 1     |                                          |
+| I3    | PI   | Unsigned | 6     |                                          |
+| I4    | PI   | Unsigned | 1     |                                          |
+| I5    | PI   | Unsigned | 1     |                                          |
+| I6    | PI   | Unsigned | 4     |                                          |
+| T156  | IFO  | Unsigned | 6     | I1 * I2 (SME.v:307)                      |
+| T546  | IFO  | Unsigned | 6     | { I4, I5 } ? I3 : T156 (SME.v:296)       |
+| O1    | PO   | Unsigned | 6     | T546 + I6 ( SME.v:297 SME.v:307 )        |
+==============================================================================
+
+
+Datapath Extraction Report
+
+Information: Operator associated with resources 'sub_64 (SME.v:64) add_64 (SME.v:64) add_64_2 (SME.v:64)' in design 'SME' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'gte_64 (SME.v:64)'.  (HDL-120)
+
+Information: Operator associated with resources 'add_366_I2 (SME.v:366) add_366_2_I2 (SME.v:366)' in design 'SME' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'lt_366_I2 (SME.v:366)'.  (HDL-120)
+
+Information: Operator associated with resources 'add_366_I3 (SME.v:366) add_366_2_I3 (SME.v:366)' in design 'SME' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'lt_366_I3 (SME.v:366)'.  (HDL-120)
+
+Information: Operator associated with resources 'add_366_I4 (SME.v:366) add_366_2_I4 (SME.v:366)' in design 'SME' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'lt_366_I4 (SME.v:366)'.  (HDL-120)
+
+Information: Operator associated with resources 'add_366_I5 (SME.v:366) add_366_2_I5 (SME.v:366)' in design 'SME' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'lt_366_I5 (SME.v:366)'.  (HDL-120)
+
+Information: Operator associated with resources 'add_366_I6 (SME.v:366) add_366_2_I6 (SME.v:366)' in design 'SME' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'lt_366_I6 (SME.v:366)'.  (HDL-120)
+
+Information: Operator associated with resources 'add_366_I7 (SME.v:366) add_366_2_I7 (SME.v:366)' in design 'SME' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'lt_366_I7 (SME.v:366)'.  (HDL-120)
+
+Information: Operator associated with resources 'add_366_I8 (SME.v:366) add_366_2_I8 (SME.v:366)' in design 'SME' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'lt_366_I8 (SME.v:366)'.  (HDL-120)
+
+Information: Operator associated with resources 'add_451 (SME.v:451) sub_451 (SME.v:451) sub_451_2 (SME.v:451)' in design 'SME' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'gte_451 (SME.v:451)'.  (HDL-120)
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| gte_x_2            | DW_cmp           | apparch (area)     |                |
+| sub_x_7            | DW01_sub         | apparch (area)     |                |
+| sub_x_8            | DW01_sub         | apparch (area)     |                |
+| eq_x_15            | DW_cmp           | apparch (area)     |                |
+| eq_x_16            | DW_cmp           | apparch (area)     |                |
+| eq_x_17            | DW_cmp           | apparch (area)     |                |
+| eq_x_18            | DW_cmp           | apparch (area)     |                |
+| eq_x_19            | DW_cmp           | apparch (area)     |                |
+| eq_x_20            | DW_cmp           | apparch (area)     |                |
+| eq_x_21            | DW_cmp           | apparch (area)     |                |
+| eq_x_22            | DW_cmp           | apparch (area)     |                |
+| add_x_31           | DW01_inc         | apparch (area)     |                |
+| lte_x_51           | DW_cmp           | apparch (area)     |                |
+| lt_x_69            | DW_cmp           | apparch (area)     |                |
+| lt_x_70            | DW_cmp           | apparch (area)     |                |
+| lt_x_71            | DW_cmp           | apparch (area)     |                |
+| lt_x_72            | DW_cmp           | apparch (area)     |                |
+| lt_x_73            | DW_cmp           | apparch (area)     |                |
+| lt_x_74            | DW_cmp           | apparch (area)     |                |
+| lt_x_75            | DW_cmp           | apparch (area)     |                |
+| lt_x_77            | DW_cmp           | apparch (area)     |                |
+| lt_x_78            | DW_cmp           | apparch (area)     |                |
+| lt_x_79            | DW_cmp           | apparch (area)     |                |
+| lt_x_80            | DW_cmp           | apparch (area)     |                |
+| lt_x_81            | DW_cmp           | apparch (area)     |                |
+| lt_x_82            | DW_cmp           | apparch (area)     |                |
+| lt_x_83            | DW_cmp           | apparch (area)     |                |
+| gte_x_116          | DW_cmp           | apparch (area)     |                |
+| add_x_127          | DW01_add         | apparch (area)     |                |
+| add_x_128          | DW01_add         | apparch (area)     |                |
+| add_x_129          | DW01_add         | apparch (area)     |                |
+| add_x_130          | DW01_add         | apparch (area)     |                |
+| add_x_131          | DW01_add         | apparch (area)     |                |
+| add_x_132          | DW01_add         | apparch (area)     |                |
+| add_x_133          | DW01_add         | apparch (area)     |                |
+| DP_OP_547J1_122_6630                  |                    |                |
+|                    | DP_OP_547J1_122_6630 | str (area,speed)                |
+| DP_OP_548J1_123_2509                  |                    |                |
+|                    | DP_OP_548J1_123_2509 | str (area,speed)                |
+| DP_OP_549J1_124_3595                  |                    |                |
+|                    | DP_OP_549J1_124_3595 | str (area)     |                |
+|                    |                  | mult_arch: and     |                |
+| DP_OP_550J1_125_8353                  |                    |                |
+|                    | DP_OP_550J1_125_8353 | str (area)     |                |
+| DP_OP_551J1_126_774                   |                    |                |
+|                    | DP_OP_551J1_126_774 | str (area)      |                |
+| DP_OP_552J1_127_774                   |                    |                |
+|                    | DP_OP_552J1_127_774 | str (area,speed)                 |
+| DP_OP_553J1_128_774                   |                    |                |
+|                    | DP_OP_553J1_128_774 | str (area)      |                |
+| DP_OP_554J1_129_774                   |                    |                |
+|                    | DP_OP_554J1_129_774 | str (area,speed)                 |
+| DP_OP_555J1_130_774                   |                    |                |
+|                    | DP_OP_555J1_130_774 | str (area)      |                |
+| DP_OP_556J1_131_774                   |                    |                |
+|                    | DP_OP_556J1_131_774 | str (area)      |                |
+| DP_OP_557J1_132_1308                  |                    |                |
+|                    | DP_OP_557J1_132_1308 | str (area)     |                |
+| DP_OP_550_136_389  | DP_OP_550_136_389 | str (area,speed)  |                |
+|                    |                  | mult_arch: and     |                |
+===============================================================================
+
+1
