@@ -2,24 +2,23 @@
 ****************************************
 check_design summary:
 Version:     N-2017.09-SP2
-Date:        Wed Jan 17 20:32:18 2024
+Date:        Thu Jan 18 16:14:27 2024
 ****************************************
 
                    Name                                            Total
 --------------------------------------------------------------------------------
-Cells                                                              11
-    Cells do not drive (LINT-1)                                    11
+Cells                                                              10
+    Cells do not drive (LINT-1)                                    10
 --------------------------------------------------------------------------------
 
-Warning: In design 'SME', cell 'B_330' does not drive any nets. (LINT-1)
-Warning: In design 'SME', cell 'C4834' does not drive any nets. (LINT-1)
-Warning: In design 'SME', cell 'C4858' does not drive any nets. (LINT-1)
-Warning: In design 'SME', cell 'C4863' does not drive any nets. (LINT-1)
-Warning: In design 'SME', cell 'C5170' does not drive any nets. (LINT-1)
-Warning: In design 'SME', cell 'C5173' does not drive any nets. (LINT-1)
-Warning: In design 'SME', cell 'C5212' does not drive any nets. (LINT-1)
-Warning: In design 'SME', cell 'C5220' does not drive any nets. (LINT-1)
-Warning: In design 'SME', cell 'C5221' does not drive any nets. (LINT-1)
-Warning: In design 'SME', cell 'C5222' does not drive any nets. (LINT-1)
-Warning: In design 'SME', cell 'C5223' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'B_320' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C4781' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C4805' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C5112' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C5115' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C5144' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C5152' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C5153' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C5154' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C5155' does not drive any nets. (LINT-1)
 1

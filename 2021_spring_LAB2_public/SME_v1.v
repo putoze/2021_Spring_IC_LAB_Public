@@ -46,7 +46,7 @@ localparam STAR      = 8'h2A;
 reg [7:0] stringdata_ff [0:33];
 reg [7:0] pattern_ff[0:7];
 reg [5:0] string_cnt,string_cnt_max;
-reg [2:0] curr_state, next_state;
+reg [3:0] curr_state, next_state;
 
 reg [7:0] com_seq_s[0:7],com_seq_p[0:7];
 
@@ -60,21 +60,15 @@ reg  match_f_ff;
 reg  match_f,pre_match_f,back_match_f,front_or_back,cal_done;
 reg  star_f,head_f,end_f;
 
-wire [3:0] back_star_loc_select = star_f ? star_loc + 1 : 'd0;
-wire back_done_temp = cal_cnt >= (string_cnt_max - pat_cnt + end_f + back_star_loc_select);
-wire pre_done_temp  = cal_cnt >= (string_cnt_max - star_loc + end_f);
-wire pre_done  = pre_done_temp  &&  front_or_back;
-wire back_done = back_done_temp && !front_or_back;
-
+wire [3:0] star_loc_select = star_f ? star_loc + 1 : 'd0;
+wire cal_done_temp = cal_cnt >= (string_cnt_max - pat_cnt + end_f + star_loc_select);
+wire pre_done  = front_or_back && (cal_cnt == (string_cnt_max - star_loc + end_f));
+wire back_done = cal_done_temp && star_f && !front_or_back;
 wire [7:0] com_result;
+wire com_match = com_result == 8'b11111111;
 wire read_s_done = (!isstring) && isstring_ff && curr_state == READ_S;
 wire read_p_done = (!ispattern) && ispattern_ff && curr_state == READ_P;
-wire com_match   = com_result == 8'b11111111;
 
-//state indicater
-wire state_IDLE   = curr_state == IDLE;
-wire state_CAL    = curr_state == CAL;
-wire state_DONE   = curr_state == DONE;
 
 //================================================================
 //   FSM
@@ -92,7 +86,7 @@ end
 
 always @(*) begin
 	case(curr_state)
-	IDLE    : next_state = isstring_ff ? READ_S : ispattern_ff ? READ_P : IDLE;
+	IDLE    : next_state = isstring ? READ_S : ispattern ? READ_P : IDLE;
 	READ_S  : next_state = read_s_done ? READ_P : READ_S;
 	READ_P  : next_state = read_p_done ? CAL : READ_P;
 	CAL     : next_state = cal_done ? DONE : CAL;
@@ -111,7 +105,7 @@ always @(posedge clk or negedge rst_n) begin
 		out_valid   <= 'd0;
 	end
 	else begin
-		if (state_DONE) begin
+		if (curr_state[2]) begin
 			if (match_f_ff) begin
 				match       <= 'd1;
 				out_valid   <= 'd1;
@@ -152,7 +146,7 @@ always @(posedge clk or negedge rst_n) begin
 		else if (isstring) begin
 			isstring_ff  <= 1;
 		end
-		else if (state_DONE) begin
+		else if (curr_state == DONE) begin
 		    ispattern_ff <= 0;
 		    isstring_ff  <= 0;
 		end
@@ -192,7 +186,7 @@ always @(posedge clk or negedge rst_n) begin
 		end
 	end
 	else begin
-		if (state_DONE) begin
+		if (curr_state[2]) begin
 			for(i=0;i<8;i=i+1) begin
 				pattern_ff[i] <= DOT;
 			end
@@ -220,7 +214,7 @@ always @(posedge clk or negedge rst_n) begin
 		else if(pre_match_f) begin
 			match_f_ff <= 1;
 		end
-		else if(state_DONE) begin
+		else if(curr_state[2]) begin
 			match_f_ff <= 0;
 		end
 	end
@@ -258,7 +252,7 @@ always @(posedge clk or negedge rst_n) begin
 		if (ispattern) begin
 			pat_cnt <= pat_cnt + 'd1;
 		end
-		else if(state_DONE) begin
+		else if(curr_state[2]) begin
 			pat_cnt <= 'd0;
 		end
 	end
@@ -272,7 +266,7 @@ always @(posedge clk or negedge rst_n) begin
 		head_f   <= 0;
 		end_f    <= 0;
 	end
-	else if (ispattern) begin
+	else if (ispattern ) begin
 		if(chardata == STAR) begin
 			star_loc <= pat_cnt;
 			star_f   <= 1;	
@@ -284,7 +278,7 @@ always @(posedge clk or negedge rst_n) begin
 			end_f  <= 1;
 		end
 	end
-	else if(state_DONE) begin
+	else if(curr_state[2]) begin
 	    star_loc <= 'd0;
 		star_f   <= 0;
 		head_f   <= 0;
@@ -298,9 +292,9 @@ always @(posedge clk or negedge rst_n) begin
 		cal_cnt <= 'd0;
 	end
 	else begin
-		if (state_CAL) begin
+		if (curr_state == CAL) begin
 			if (back_done) begin
-				cal_cnt <= front_cnt;
+				cal_cnt <= front_cnt + 'd1;
 			end
 			else if (match_f) begin
 				cal_cnt <= cal_cnt;
@@ -323,12 +317,13 @@ always @(posedge clk or negedge rst_n) begin
 	end
 end
 
+
 always @(posedge clk or negedge rst_n) begin
 	if (!rst_n) begin
 		front_cnt <= 'd0;
 	end
 	else begin
-		if (state_CAL && pre_match_f) begin
+		if (curr_state == CAL && pre_match_f) begin
 			front_cnt <=  cal_cnt ;
 		end
 	end
@@ -349,7 +344,7 @@ end
 
 //com_seq_p
 always @(*) begin
-	if (state_CAL) begin
+	if (curr_state == CAL) begin
 		if (!star_f) begin
 			for(i=0;i<8;i=i+1) begin
 				com_seq_p[i] = pattern_ff[i];
@@ -387,7 +382,7 @@ end
 
 // match_f,pre_match_f,back_match_f
 always @(*) begin
-	if (state_CAL) begin
+	if (curr_state == CAL) begin
 		if (star_f) begin
 			match_f = match_f_ff & back_match_f;
 		end
@@ -401,7 +396,7 @@ always @(*) begin
 end
 
 always @(*) begin
-	if (state_CAL) begin
+	if (curr_state == CAL) begin
 		if (star_f) begin
 			pre_match_f = front_or_back && (com_match || star_loc == 'd0);
 		end
@@ -415,7 +410,7 @@ always @(*) begin
 end
 
 always @(*) begin
-	if (state_CAL) begin
+	if (curr_state == CAL) begin
 		if (star_f) begin
 			back_match_f = !front_or_back & com_match;
 		end
@@ -434,7 +429,7 @@ always @(posedge clk or negedge rst_n) begin
 		front_or_back <= 1;
 	end
 	else begin
-		if (state_DONE) begin
+		if (curr_state == DONE) begin
 			front_or_back <= 1;
 		end
 		else if(pre_match_f) begin
@@ -448,9 +443,9 @@ end
 
 //cal_done
 always @(*) begin
-	if (state_CAL) begin
+	if (curr_state == CAL) begin
 		if (!star_f) begin
-			cal_done = match_f || back_done_temp;
+			cal_done = match_f || cal_done_temp;
 		end
 		else begin
 			cal_done = (match_f && !front_or_back) || pre_done || back_done || (pre_match_f && ((cal_cnt + pat_cnt - star_loc - end_f) >= string_cnt_max) && star_loc != 'd0);
