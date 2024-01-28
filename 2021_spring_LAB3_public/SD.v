@@ -49,16 +49,20 @@ reg [3:0] in_ff;
 
 // table
 reg [3:0] sd_table[0:8][0:8];
+reg [3:0] sd_table_row_pt,sd_table_col_pt;
+
+reg [3:0] empty_table_pt;
 reg [3:0] empty_table_row[0:14];
 reg [3:0] empty_table_col[0:14];
-reg [8:0] dirty_bit_table[0:14];
-reg [3:0] backward_stack[0:BAKWARD_STACK_DEPTH-1]; //store empty_table_pt
 
-reg [3:0] sd_table_row_pt,sd_table_col_pt;
+reg [8:0] dirty_bit_table[0:BAKWARD_STACK_DEPTH-1];
+reg [8:0] dirty_bit_value;
+reg [3:0] backward_stack[0:BAKWARD_STACK_DEPTH-1]; //store empty_table_pt
 reg [BAKWARD_STACK_LENGTH - 1:0] backward_stack_wpt; //write pt
-reg [3:0] empty_table_pt;
+
 reg fail;
 
+//state
 wire STATE_FORWARD_w = curr_state == STATE_FORWARD;
 wire STATE_BAKWARD_w = curr_state == STATE_BAKWARD;
 wire STATE_IDLE_w    = curr_state == STATE_IDLE   ;
@@ -71,10 +75,10 @@ wire empty_pt_end = empty_table_pt == 'd14;
 wire backward_stack_wpt_empty = backward_stack_wpt == 'd0;
 reg  forward_early_break_w; 
 
+
 wire [BAKWARD_STACK_LENGTH - 1:0] backward_stack_rpt = backward_stack_wpt - 'd1; //read pt
 wire [3:0] empty_table_row_cur = empty_table_row[empty_table_pt];
 wire [3:0] empty_table_col_cur = empty_table_col[empty_table_pt];
-wire [8:0] dirty_bit_value     = dirty_bit_table[empty_table_pt];
 reg  [3:0] next_value_w;
 
 // FORWARD row & col & box
@@ -301,33 +305,44 @@ end
 //dirty_bit_table
 always @(posedge clk or negedge rst_n) begin
 	if(~rst_n) begin
-		for (i = 0; i < 15; i=i+1) begin
+		for (i = 0; i < BAKWARD_STACK_DEPTH; i=i+1) begin
 		    dirty_bit_table[i] <= 'd0;
 		end
 	end 
 	else begin
-		if (STATE_FORWARD_w) begin
-			if     (not_exist_total[0] & !dirty_bit_value[0]) dirty_bit_table[empty_table_pt][0] <= 1;
-			else if(not_exist_total[1] & !dirty_bit_value[1]) dirty_bit_table[empty_table_pt][1] <= 1;
-			else if(not_exist_total[2] & !dirty_bit_value[2]) dirty_bit_table[empty_table_pt][2] <= 1;
-			else if(not_exist_total[3] & !dirty_bit_value[3]) dirty_bit_table[empty_table_pt][3] <= 1;
-			else if(not_exist_total[4] & !dirty_bit_value[4]) dirty_bit_table[empty_table_pt][4] <= 1;
-			else if(not_exist_total[5] & !dirty_bit_value[5]) dirty_bit_table[empty_table_pt][5] <= 1;
-			else if(not_exist_total[6] & !dirty_bit_value[6]) dirty_bit_table[empty_table_pt][6] <= 1;
-			else if(not_exist_total[7] & !dirty_bit_value[7]) dirty_bit_table[empty_table_pt][7] <= 1;
-			else if(not_exist_total[8] & !dirty_bit_value[8]) dirty_bit_table[empty_table_pt][8] <= 1;
+		if (STATE_FORWARD_w && (not_exist_number > 1)) begin
+			if     (not_exist_total[0] & !dirty_bit_value[0]) dirty_bit_table[backward_stack_wpt][0] <= 1;
+			else if(not_exist_total[1] & !dirty_bit_value[1]) dirty_bit_table[backward_stack_wpt][1] <= 1;
+			else if(not_exist_total[2] & !dirty_bit_value[2]) dirty_bit_table[backward_stack_wpt][2] <= 1;
+			else if(not_exist_total[3] & !dirty_bit_value[3]) dirty_bit_table[backward_stack_wpt][3] <= 1;
+			else if(not_exist_total[4] & !dirty_bit_value[4]) dirty_bit_table[backward_stack_wpt][4] <= 1;
+			else if(not_exist_total[5] & !dirty_bit_value[5]) dirty_bit_table[backward_stack_wpt][5] <= 1;
+			else if(not_exist_total[6] & !dirty_bit_value[6]) dirty_bit_table[backward_stack_wpt][6] <= 1;
+			else if(not_exist_total[7] & !dirty_bit_value[7]) dirty_bit_table[backward_stack_wpt][7] <= 1;
+			else if(not_exist_total[8] & !dirty_bit_value[8]) dirty_bit_table[backward_stack_wpt][8] <= 1;
 		end
-		else if (STATE_BAKWARD_w) begin
-			for (i = 0; i < 15; i=i+1) begin
-			    if (i > backward_stack[backward_stack_rpt]) begin
-			    	dirty_bit_table[i] <= 'd0;
-			    end
-			end
+		else if (STATE_BAKWARD_w | STATE_FORWARD_w) begin
+			dirty_bit_table[backward_stack_wpt] <= 'd0;
 		end
 		else if (STATE_OUTPUT_w) begin
-			for (i = 0; i < 15; i=i+1) begin
+			for (i = 0; i < BAKWARD_STACK_DEPTH; i=i+1) begin
 			    dirty_bit_table[i] <= 'd0;
 			end
+		end
+	end
+end
+
+//dirty_bit_value
+always @(posedge clk or negedge rst_n) begin
+	if(~rst_n) begin
+		dirty_bit_value <= 'd0;
+	end 
+	else begin
+		if (STATE_BAKWARD_w) begin
+			dirty_bit_value <= dirty_bit_table[backward_stack_rpt];
+		end
+		else begin
+			dirty_bit_value <= 'd0;
 		end
 	end
 end

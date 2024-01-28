@@ -2,6 +2,7 @@
 
 ```
 Performance = Area * (Execution Cycles + Number of Patterns) * Cycle Time
+Number of Patterns = 2011
 ```
 
 - My
@@ -11,8 +12,8 @@ Your execution cycles = 23322 cycles
 Your clock period     = 7.0 ns
 Total latency         = 177331.0 ns
 
-Total cell area       = 62793
-Performance           = 1.11*e10
+Total cell area       = 59086
+Performance           = 1.06*e10
 ```
 
 - Internet
@@ -23,7 +24,7 @@ Your clock period     = 7.0 ns
 Total latency         = 208761.0 ns
 
 Total cell area       = 52722
-Performance           = 1.10*e10
+Performance           = 1.11*e10
 ```
 
 ## 心得
