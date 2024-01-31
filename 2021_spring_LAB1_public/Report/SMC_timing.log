@@ -1,0 +1,142 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : SMC
+Version: N-2017.09-SP2
+Date   : Wed Jul 20 10:09:15 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: V_GS_3[0] (input port)
+  Endpoint: out_n[9] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  V_GS_3[0] (in)                                          0.00       0.00 f
+  U1529/Y (INVXL)                                         0.14       0.14 r
+  U1754/Y (NAND2BX1)                                      0.08       0.22 f
+  U1755/Y (OAI2BB2XL)                                     0.24       0.46 r
+  U879/Y (INVXL)                                          0.10       0.56 f
+  U880/Y (OAI2BB1XL)                                      0.22       0.78 f
+  U1758/Y (OAI21XL)                                       0.27       1.05 r
+  U1760/Y (AOI2BB2X1)                                     0.25       1.30 f
+  U847/Y (NOR2XL)                                         0.27       1.57 r
+  U1764/Y (NAND2BX1)                                      0.13       1.69 f
+  U1782/Y (AOI2BB2X1)                                     0.26       1.95 f
+  U1783/Y (AOI2BB2X1)                                     0.24       2.19 f
+  U1784/Y (OAI22XL)                                       0.46       2.65 r
+  U1788/Y (AOI2BB2X1)                                     0.14       2.79 f
+  U1789/Y (OAI21XL)                                       0.14       2.93 r
+  U1569/Y (NAND2XL)                                       0.11       3.04 f
+  U1937/CO (ADDFXL)                                       0.56       3.60 f
+  U1938/CO (ADDFXL)                                       0.38       3.98 f
+  U1928/CO (ADDFXL)                                       0.38       4.35 f
+  U1794/CO (ADDFXL)                                       0.39       4.74 f
+  U1796/Y (AOI2BB2X1)                                     0.26       5.01 f
+  U1256/Y (NOR2XL)                                        0.15       5.16 r
+  U1797/Y (NOR2BX1)                                       0.11       5.27 f
+  U967/Y (NOR2XL)                                         0.16       5.43 r
+  U1929/Y (AO21X1)                                        0.19       5.62 r
+  U816/Y (OR2X2)                                          0.12       5.74 r
+  U1209/Y (NAND2XL)                                       0.11       5.85 f
+  U1083/Y (INVXL)                                         0.13       5.98 r
+  U944/Y (NOR2XL)                                         0.09       6.07 f
+  U945/Y (AOI21XL)                                        0.17       6.24 r
+  U1573/Y (INVXL)                                         0.08       6.32 f
+  U833/Y (OR2X1)                                          0.23       6.56 f
+  U1171/Y (NAND2XL)                                       0.14       6.70 r
+  U1583/Y (INVXL)                                         0.10       6.80 f
+  U893/Y (NOR2XL)                                         0.17       6.97 r
+  U954/Y (AOI21XL)                                        0.09       7.06 f
+  U1571/Y (INVXL)                                         0.12       7.18 r
+  U1126/Y (NOR2XL)                                        0.07       7.25 f
+  U1940/Y (NOR2BX1)                                       0.14       7.39 r
+  U955/Y (NOR2XL)                                         0.09       7.48 f
+  U1941/Y (AO21X1)                                        0.26       7.74 f
+  U831/Y (OR2X1)                                          0.21       7.95 f
+  U1108/Y (NAND2XL)                                       0.12       8.08 r
+  U1219/Y (INVXL)                                         0.10       8.17 f
+  U830/Y (OR2X1)                                          0.24       8.42 f
+  U1193/Y (OAI2BB1XL)                                     0.18       8.60 r
+  U1228/Y (NOR2XL)                                        0.08       8.68 f
+  U1950/Y (NOR2BX1)                                       0.17       8.85 r
+  U1078/Y (NOR2XL)                                        0.09       8.94 f
+  U1555/Y (OAI211XL)                                      0.21       9.16 r
+  U1186/Y (AOI31XL)                                       0.14       9.30 f
+  U1290/Y (OAI2BB1XL)                                     0.20       9.49 f
+  U1289/Y (OAI211XL)                                      0.10       9.59 r
+  U1288/Y (OAI211XL)                                      0.12       9.71 f
+  U1951/Y (OAI21XL)                                       0.25       9.96 r
+  U1600/Y (INVXL)                                         0.25      10.20 f
+  U1954/Y (OA22X1)                                        0.46      10.66 f
+  U1089/Y (NAND2XL)                                       0.10      10.77 r
+  U1961/Y (OAI21XL)                                       0.08      10.85 f
+  U1196/Y (AOI21XL)                                       0.15      11.00 r
+  U1962/Y (OAI31XL)                                       0.14      11.14 f
+  U1963/Y (AOI222XL)                                      0.37      11.51 r
+  U1295/Y (INVXL)                                         0.09      11.60 f
+  U1998/Y (OAI21XL)                                       0.54      12.15 r
+  U2001/Y (MXI2X1)                                        0.41      12.56 f
+  U2003/Y (AOI222XL)                                      0.39      12.95 r
+  U1396/Y (AOI21XL)                                       0.13      13.08 f
+  U2011/Y (OAI31XL)                                       0.28      13.35 r
+  U2012/Y (AOI222XL)                                      0.21      13.56 f
+  U1525/Y (OAI21X1)                                       0.51      14.07 r
+  U1326/Y (INVXL)                                         0.25      14.32 f
+  U2014/Y (AO22X1)                                        0.36      14.68 f
+  U2019/Y (OAI222XL)                                      0.30      14.98 r
+  U1570/Y (INVXL)                                         0.13      15.11 f
+  U2106/Y (AOI2BB1X1)                                     0.26      15.37 f
+  U1321/Y (AOI211XL)                                      0.16      15.53 r
+  U2107/Y (OAI21XL)                                       0.11      15.65 f
+  U1412/Y (OAI211XL)                                      0.11      15.76 r
+  U2108/Y (OA21XL)                                        0.17      15.92 r
+  U2109/Y (AO21X1)                                        0.32      16.24 r
+  U1479/Y (INVXL)                                         0.09      16.33 f
+  U2114/Y (OAI21XL)                                       0.36      16.69 r
+  U2118/Y (OAI222XL)                                      0.21      16.90 f
+  U1323/Y (INVXL)                                         0.11      17.01 r
+  U2124/Y (OAI22XL)                                       0.08      17.09 f
+  U2127/Y (OAI31XL)                                       0.27      17.36 r
+  U2128/Y (AOI222XL)                                      0.21      17.57 f
+  U1526/Y (OAI21X1)                                       0.63      18.20 r
+  U2137/Y (MXI2X1)                                        0.42      18.62 f
+  U1317/Y (INVXL)                                         0.17      18.79 r
+  U2140/Y (AOI222XL)                                      0.18      18.97 f
+  U2142/Y (OA21XL)                                        0.30      19.27 f
+  U1585/Y (AOI211XL)                                      0.17      19.44 r
+  U2144/Y (OAI31XL)                                       0.13      19.57 f
+  U2145/Y (OAI21XL)                                       0.10      19.67 r
+  U1438/Y (AOI21XL)                                       0.10      19.77 f
+  U1437/Y (NOR2XL)                                        0.63      20.40 r
+  U2189/Y (MXI2X1)                                        0.41      20.82 f
+  U1491/Y (NAND2XL)                                       0.18      21.00 r
+  U2197/Y (NAND2BX1)                                      0.07      21.07 f
+  DP_OP_227J1_134_3125/U61/CO (ADDFXL)                    0.61      21.68 f
+  DP_OP_227J1_134_3125/U60/CO (ADDFXL)                    0.38      22.06 f
+  DP_OP_227J1_134_3125/U59/CO (ADDFXL)                    0.38      22.43 f
+  DP_OP_227J1_134_3125/U58/CO (ADDFXL)                    0.38      22.81 f
+  DP_OP_227J1_134_3125/U57/S (ADDFXL)                     0.35      23.16 r
+  U2225/Y (AO21X1)                                        0.16      23.32 r
+  DP_OP_227J1_134_3125/U18/S (ADDFXL)                     0.53      23.86 f
+  DP_OP_227J1_134_3125/U6/CO (ADDFXL)                     0.57      24.43 f
+  DP_OP_227J1_134_3125/U5/CO (ADDFXL)                     0.38      24.81 f
+  DP_OP_227J1_134_3125/U4/CO (ADDFXL)                     0.38      25.18 f
+  DP_OP_227J1_134_3125/U3/CO (ADDFXL)                     0.37      25.56 f
+  U2166/Y (XOR2X1)                                        0.15      25.70 f
+  out_n[9] (out)                                          0.00      25.70 f
+  data arrival time                                                 25.70
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

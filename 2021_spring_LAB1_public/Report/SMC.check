@@ -1,0 +1,30 @@
+ 
+****************************************
+check_design summary:
+Version:     N-2017.09-SP2
+Date:        Wed Jul 20 10:09:06 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                              16
+    Cells do not drive (LINT-1)                                    16
+--------------------------------------------------------------------------------
+
+Warning: In design 'SMC', cell 'B_4' does not drive any nets. (LINT-1)
+Warning: In design 'SMC', cell 'B_5' does not drive any nets. (LINT-1)
+Warning: In design 'SMC', cell 'B_6' does not drive any nets. (LINT-1)
+Warning: In design 'SMC', cell 'B_7' does not drive any nets. (LINT-1)
+Warning: In design 'compute_5', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'compute_5', cell 'B_4' does not drive any nets. (LINT-1)
+Warning: In design 'compute_0', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'compute_0', cell 'B_4' does not drive any nets. (LINT-1)
+Warning: In design 'compute_1', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'compute_1', cell 'B_4' does not drive any nets. (LINT-1)
+Warning: In design 'compute_2', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'compute_2', cell 'B_4' does not drive any nets. (LINT-1)
+Warning: In design 'compute_3', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'compute_3', cell 'B_4' does not drive any nets. (LINT-1)
+Warning: In design 'compute_4', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'compute_4', cell 'B_4' does not drive any nets. (LINT-1)
+1

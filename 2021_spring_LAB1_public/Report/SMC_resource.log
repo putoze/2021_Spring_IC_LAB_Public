@@ -1,0 +1,487 @@
+ 
+****************************************
+Report : resources
+Design : SMC
+Version: N-2017.09-SP2
+Date   : Wed Jul 20 10:09:15 2022
+****************************************
+
+
+Resource Report for this hierarchy in file
+        /home/rain/IC_LAB/IC_training/lab2021/lab1/SMC.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| div_3          | DW_div_uns     | a_width=10 | x0/div_114 (SMC.v:114)     |
+|                |                | b_width=2  |                            |
+| gt_x_4         | DW_cmp         | width=9    | Id_comp1/gt_78 (SMC.v:78)  |
+| lt_x_6         | DW_cmp         | width=9    | Id_comp1/lt_79 (SMC.v:79)  |
+| gt_x_8         | DW_cmp         | width=9    | Id_comp12/gt_78 (SMC.v:78) |
+| lt_x_10        | DW_cmp         | width=9    | Id_comp12/lt_79 (SMC.v:79) |
+| gt_x_13        | DW_cmp         | width=9    | Id_comp11/gt_78 (SMC.v:78) |
+| lt_x_15        | DW_cmp         | width=9    | Id_comp11/lt_79 (SMC.v:79) |
+| gt_x_17        | DW_cmp         | width=9    | Id_comp10/gt_78 (SMC.v:78) |
+| lt_x_19        | DW_cmp         | width=9    | Id_comp10/lt_79 (SMC.v:79) |
+| gt_x_21        | DW_cmp         | width=9    | Id_comp9/gt_78 (SMC.v:78)  |
+| lt_x_23        | DW_cmp         | width=9    | Id_comp9/lt_79 (SMC.v:79)  |
+| gt_x_25        | DW_cmp         | width=9    | Id_comp8/gt_78 (SMC.v:78)  |
+| lt_x_27        | DW_cmp         | width=9    | Id_comp8/lt_79 (SMC.v:79)  |
+| gt_x_29        | DW_cmp         | width=9    | Id_comp7/gt_78 (SMC.v:78)  |
+| lt_x_31        | DW_cmp         | width=9    | Id_comp7/lt_79 (SMC.v:79)  |
+| gt_x_33        | DW_cmp         | width=9    | Id_comp6/gt_78 (SMC.v:78)  |
+| lt_x_35        | DW_cmp         | width=9    | Id_comp6/lt_79 (SMC.v:79)  |
+| gt_x_37        | DW_cmp         | width=9    | Id_comp5/gt_78 (SMC.v:78)  |
+| lt_x_39        | DW_cmp         | width=9    | Id_comp5/lt_79 (SMC.v:79)  |
+| gt_x_41        | DW_cmp         | width=9    | Id_comp4/gt_78 (SMC.v:78)  |
+| lt_x_43        | DW_cmp         | width=9    | Id_comp4/lt_79 (SMC.v:79)  |
+| gt_x_45        | DW_cmp         | width=9    | Id_comp3/gt_78 (SMC.v:78)  |
+| lt_x_47        | DW_cmp         | width=9    | Id_comp3/lt_79 (SMC.v:79)  |
+| gt_x_49        | DW_cmp         | width=9    | Id_comp2/gt_78 (SMC.v:78)  |
+| lt_x_51        | DW_cmp         | width=9    | Id_comp2/lt_79 (SMC.v:79)  |
+| div_55         | DW_div_uns     | a_width=10 | x5/div_114 (SMC.v:114)     |
+|                |                | b_width=2  |                            |
+| div_58         | DW_div_uns     | a_width=10 | x4/div_114 (SMC.v:114)     |
+|                |                | b_width=2  |                            |
+| div_61         | DW_div_uns     | a_width=10 | x3/div_114 (SMC.v:114)     |
+|                |                | b_width=2  |                            |
+| div_64         | DW_div_uns     | a_width=10 | x2/div_114 (SMC.v:114)     |
+|                |                | b_width=2  |                            |
+| div_67         | DW_div_uns     | a_width=10 | x1/div_114 (SMC.v:114)     |
+|                |                | b_width=2  |                            |
+| gt_x_68        | DW_cmp         | width=3    | x0/gt_102 (SMC.v:102)      |
+|                |                |            | x0/gt_97 (SMC.v:97)        |
+| gt_x_69        | DW_cmp         | width=3    | x5/gt_102 (SMC.v:102)      |
+|                |                |            | x5/gt_97 (SMC.v:97)        |
+| gt_x_70        | DW_cmp         | width=3    | x4/gt_102 (SMC.v:102)      |
+|                |                |            | x4/gt_97 (SMC.v:97)        |
+| gt_x_71        | DW_cmp         | width=3    | x3/gt_102 (SMC.v:102)      |
+|                |                |            | x3/gt_97 (SMC.v:97)        |
+| gt_x_72        | DW_cmp         | width=3    | x2/gt_102 (SMC.v:102)      |
+|                |                |            | x2/gt_97 (SMC.v:97)        |
+| gt_x_73        | DW_cmp         | width=3    | x1/gt_102 (SMC.v:102)      |
+|                |                |            | x1/gt_97 (SMC.v:97)        |
+| DP_OP_179J1_122_2340            |            |                            |
+|                | DP_OP_179J1_122_2340 |      |                            |
+| DP_OP_180J1_123_3350            |            |                            |
+|                | DP_OP_180J1_123_3350 |      |                            |
+| DP_OP_181J1_124_2340            |            |                            |
+|                | DP_OP_181J1_124_2340 |      |                            |
+| DP_OP_182J1_125_3350            |            |                            |
+|                | DP_OP_182J1_125_3350 |      |                            |
+| DP_OP_183J1_126_2340            |            |                            |
+|                | DP_OP_183J1_126_2340 |      |                            |
+| DP_OP_184J1_127_3350            |            |                            |
+|                | DP_OP_184J1_127_3350 |      |                            |
+| DP_OP_185J1_128_2340            |            |                            |
+|                | DP_OP_185J1_128_2340 |      |                            |
+| DP_OP_186J1_129_3350            |            |                            |
+|                | DP_OP_186J1_129_3350 |      |                            |
+| DP_OP_187J1_130_2340            |            |                            |
+|                | DP_OP_187J1_130_2340 |      |                            |
+| DP_OP_188J1_131_3350            |            |                            |
+|                | DP_OP_188J1_131_3350 |      |                            |
+| DP_OP_189J1_132_2340            |            |                            |
+|                | DP_OP_189J1_132_2340 |      |                            |
+| DP_OP_190J1_133_3350            |            |                            |
+|                | DP_OP_190J1_133_3350 |      |                            |
+| DP_OP_227J1_134_3125            |            |                            |
+|                | DP_OP_227J1_134_3125 |      |                            |
+=============================================================================
+
+Datapath Report for DP_OP_179J1_122_2340
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_179J1_122_2340 | x0/sub_94 (SMC.v:94) x0/sub_102_S2 (SMC.v:102)      |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 3     |                                          |
+| I2    | PI   | Unsigned | 3     |                                          |
+| T127  | IFO  | Signed   | 4     | O1 << 1                                  |
+| O1    | PO   | Signed   | 3     | I1 - $unsigned(1'b1) (SMC.v:94)          |
+| O2    | PO   | Signed   | 4     | T127 - I2 (SMC.v:102)                    |
+==============================================================================
+
+Datapath Report for DP_OP_180J1_123_3350
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_180J1_123_3350 | x0/mult_108 (SMC.v:108) x0/C37 (SMC.v:107)          |
+|                      | x0/mult_114 (SMC.v:114)                             |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 3     |                                          |
+| I2    | PI   | Unsigned | 4     |                                          |
+| I3    | PI   | Unsigned | 1     |                                          |
+| I4    | PI   | Unsigned | 4     |                                          |
+| I5    | PI   | Unsigned | 1     |                                          |
+| I6    | PI   | Unsigned | 3     |                                          |
+| T19   | IFO  | Unsigned | 7     | I1 * I2 (SMC.v:108)                      |
+| T20   | IFO  | Unsigned | 7     | { I3, I5 } ? T19 : I4 (SMC.v:107)        |
+| O1    | PO   | Unsigned | 10    | I6 * T20 (SMC.v:114)                     |
+==============================================================================
+
+Datapath Report for DP_OP_181J1_124_2340
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_181J1_124_2340 | x1/sub_94 (SMC.v:94) x1/sub_102_S2 (SMC.v:102)      |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 3     |                                          |
+| I2    | PI   | Unsigned | 3     |                                          |
+| T143  | IFO  | Signed   | 4     | O1 << 1                                  |
+| O1    | PO   | Signed   | 3     | I1 - $unsigned(1'b1) (SMC.v:94)          |
+| O2    | PO   | Signed   | 4     | T143 - I2 (SMC.v:102)                    |
+==============================================================================
+
+Datapath Report for DP_OP_182J1_125_3350
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_182J1_125_3350 | x1/mult_108 (SMC.v:108) x1/C37 (SMC.v:107)          |
+|                      | x1/mult_114 (SMC.v:114)                             |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 3     |                                          |
+| I2    | PI   | Unsigned | 4     |                                          |
+| I3    | PI   | Unsigned | 1     |                                          |
+| I4    | PI   | Unsigned | 4     |                                          |
+| I5    | PI   | Unsigned | 1     |                                          |
+| I6    | PI   | Unsigned | 3     |                                          |
+| T117  | IFO  | Unsigned | 7     | I1 * I2 (SMC.v:108)                      |
+| T118  | IFO  | Unsigned | 7     | { I3, I5 } ? T117 : I4 (SMC.v:107)       |
+| O1    | PO   | Unsigned | 10    | I6 * T118 (SMC.v:114)                    |
+==============================================================================
+
+Datapath Report for DP_OP_183J1_126_2340
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_183J1_126_2340 | x2/sub_94 (SMC.v:94) x2/sub_102_S2 (SMC.v:102)      |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 3     |                                          |
+| I2    | PI   | Unsigned | 3     |                                          |
+| T141  | IFO  | Signed   | 4     | O1 << 1                                  |
+| O1    | PO   | Signed   | 3     | I1 - $unsigned(1'b1) (SMC.v:94)          |
+| O2    | PO   | Signed   | 4     | T141 - I2 (SMC.v:102)                    |
+==============================================================================
+
+Datapath Report for DP_OP_184J1_127_3350
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_184J1_127_3350 | x2/mult_108 (SMC.v:108) x2/C37 (SMC.v:107)          |
+|                      | x2/mult_114 (SMC.v:114)                             |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 3     |                                          |
+| I2    | PI   | Unsigned | 4     |                                          |
+| I3    | PI   | Unsigned | 1     |                                          |
+| I4    | PI   | Unsigned | 4     |                                          |
+| I5    | PI   | Unsigned | 1     |                                          |
+| I6    | PI   | Unsigned | 3     |                                          |
+| T107  | IFO  | Unsigned | 7     | I1 * I2 (SMC.v:108)                      |
+| T108  | IFO  | Unsigned | 7     | { I3, I5 } ? T107 : I4 (SMC.v:107)       |
+| O1    | PO   | Unsigned | 10    | I6 * T108 (SMC.v:114)                    |
+==============================================================================
+
+Datapath Report for DP_OP_185J1_128_2340
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_185J1_128_2340 | x3/sub_94 (SMC.v:94) x3/sub_102_S2 (SMC.v:102)      |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 3     |                                          |
+| I2    | PI   | Unsigned | 3     |                                          |
+| T139  | IFO  | Signed   | 4     | O1 << 1                                  |
+| O1    | PO   | Signed   | 3     | I1 - $unsigned(1'b1) (SMC.v:94)          |
+| O2    | PO   | Signed   | 4     | T139 - I2 (SMC.v:102)                    |
+==============================================================================
+
+Datapath Report for DP_OP_186J1_129_3350
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_186J1_129_3350 | x3/mult_108 (SMC.v:108) x3/C37 (SMC.v:107)          |
+|                      | x3/mult_114 (SMC.v:114)                             |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 3     |                                          |
+| I2    | PI   | Unsigned | 4     |                                          |
+| I3    | PI   | Unsigned | 1     |                                          |
+| I4    | PI   | Unsigned | 4     |                                          |
+| I5    | PI   | Unsigned | 1     |                                          |
+| I6    | PI   | Unsigned | 3     |                                          |
+| T97   | IFO  | Unsigned | 7     | I1 * I2 (SMC.v:108)                      |
+| T98   | IFO  | Unsigned | 7     | { I3, I5 } ? T97 : I4 (SMC.v:107)        |
+| O1    | PO   | Unsigned | 10    | I6 * T98 (SMC.v:114)                     |
+==============================================================================
+
+Datapath Report for DP_OP_187J1_130_2340
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_187J1_130_2340 | x4/sub_94 (SMC.v:94) x4/sub_102_S2 (SMC.v:102)      |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 3     |                                          |
+| I2    | PI   | Unsigned | 3     |                                          |
+| T137  | IFO  | Signed   | 4     | O1 << 1                                  |
+| O1    | PO   | Signed   | 3     | I1 - $unsigned(1'b1) (SMC.v:94)          |
+| O2    | PO   | Signed   | 4     | T137 - I2 (SMC.v:102)                    |
+==============================================================================
+
+Datapath Report for DP_OP_188J1_131_3350
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_188J1_131_3350 | x4/mult_108 (SMC.v:108) x4/C37 (SMC.v:107)          |
+|                      | x4/mult_114 (SMC.v:114)                             |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 3     |                                          |
+| I2    | PI   | Unsigned | 4     |                                          |
+| I3    | PI   | Unsigned | 1     |                                          |
+| I4    | PI   | Unsigned | 4     |                                          |
+| I5    | PI   | Unsigned | 1     |                                          |
+| I6    | PI   | Unsigned | 3     |                                          |
+| T87   | IFO  | Unsigned | 7     | I1 * I2 (SMC.v:108)                      |
+| T88   | IFO  | Unsigned | 7     | { I3, I5 } ? T87 : I4 (SMC.v:107)        |
+| O1    | PO   | Unsigned | 10    | I6 * T88 (SMC.v:114)                     |
+==============================================================================
+
+Datapath Report for DP_OP_189J1_132_2340
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_189J1_132_2340 | x5/sub_94 (SMC.v:94) x5/sub_102_S2 (SMC.v:102)      |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 3     |                                          |
+| I2    | PI   | Unsigned | 3     |                                          |
+| T135  | IFO  | Signed   | 4     | O1 << 1                                  |
+| O1    | PO   | Signed   | 3     | I1 - $unsigned(1'b1) (SMC.v:94)          |
+| O2    | PO   | Signed   | 4     | T135 - I2 (SMC.v:102)                    |
+==============================================================================
+
+Datapath Report for DP_OP_190J1_133_3350
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_190J1_133_3350 | x5/mult_108 (SMC.v:108) x5/C37 (SMC.v:107)          |
+|                      | x5/mult_114 (SMC.v:114)                             |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 3     |                                          |
+| I2    | PI   | Unsigned | 4     |                                          |
+| I3    | PI   | Unsigned | 1     |                                          |
+| I4    | PI   | Unsigned | 4     |                                          |
+| I5    | PI   | Unsigned | 1     |                                          |
+| I6    | PI   | Unsigned | 3     |                                          |
+| T77   | IFO  | Unsigned | 7     | I1 * I2 (SMC.v:108)                      |
+| T78   | IFO  | Unsigned | 7     | { I3, I5 } ? T77 : I4 (SMC.v:107)        |
+| O1    | PO   | Unsigned | 10    | I6 * T78 (SMC.v:114)                     |
+==============================================================================
+
+Datapath Report for DP_OP_227J1_134_3125
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_227J1_134_3125 | add_58 (SMC.v:58) add_58_2 (SMC.v:58)               |
+|                      | add_59 (SMC.v:59) add_59_2 (SMC.v:59)               |
+|                      | add_59_3 (SMC.v:59) add_59_4 (SMC.v:59)             |
+|                      | add_60 (SMC.v:60) add_60_2 (SMC.v:60)               |
+|                      | add_61 (SMC.v:61) add_61_2 (SMC.v:61)               |
+|                      | add_61_3 (SMC.v:61) add_61_4 (SMC.v:61)             |
+|                      | C33 (SMC.v:57)                                      |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 9     |                                          |
+| I2    | PI   | Unsigned | 9     |                                          |
+| I3    | PI   | Unsigned | 10    |                                          |
+| I4    | PI   | Unsigned | 1     |                                          |
+| I5    | PI   | Unsigned | 1     |                                          |
+| I6    | PI   | Unsigned | 10    |                                          |
+| I7    | PI   | Unsigned | 10    |                                          |
+| I8    | PI   | Unsigned | 1     |                                          |
+| I9    | PI   | Unsigned | 1     |                                          |
+| I10   | PI   | Unsigned | 10    |                                          |
+| I11   | PI   | Unsigned | 10    |                                          |
+| T217  | IFO  | Unsigned | 10    | I1 + I2 ( SMC.v:58 SMC.v:59 SMC.v:60 SMC.v:61 ) |
+| T208  | IFO  | Unsigned | 10    | { I4, I5 } ? I3 : T217 (SMC.v:57)        |
+| T222  | IFO  | Unsigned | 10    | I10 + I11 ( SMC.v:58 SMC.v:59 SMC.v:60 SMC.v:61 ) |
+| T214  | IFO  | Unsigned | 10    | { I8, I9 } ? I7 : T222 (SMC.v:57)        |
+| O1    | PO   | Unsigned | 10    | I6 + T208 + T214 ( SMC.v:58 SMC.v:59 SMC.v:60 SMC.v:61 ) |
+==============================================================================
+
+
+Datapath Extraction Report
+
+Information: Operator associated with resources 'x0/sub_102_S2 (SMC.v:102)' in design 'SMC' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'x0/C36 (SMC.v:102)'.  (HDL-120)
+
+Information: Operator associated with resources 'x1/sub_102_S2 (SMC.v:102)' in design 'SMC' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'x1/C36 (SMC.v:102)'.  (HDL-120)
+
+Information: Operator associated with resources 'x2/sub_102_S2 (SMC.v:102)' in design 'SMC' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'x2/C36 (SMC.v:102)'.  (HDL-120)
+
+Information: Operator associated with resources 'x3/sub_102_S2 (SMC.v:102)' in design 'SMC' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'x3/C36 (SMC.v:102)'.  (HDL-120)
+
+Information: Operator associated with resources 'x4/sub_102_S2 (SMC.v:102)' in design 'SMC' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'x4/C36 (SMC.v:102)'.  (HDL-120)
+
+Information: Operator associated with resources 'x5/sub_102_S2 (SMC.v:102)' in design 'SMC' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'x5/C36 (SMC.v:102)'.  (HDL-120)
+
+Information: Operator associated with resources 'x0/gt_97 (SMC.v:97) x0/gt_102 (SMC.v:102)' in design 'SMC' breaks the datapath extraction because there is leakage due to truncation on the fanout of its driver 'x0/sub_94 (SMC.v:94)'.  (HDL-120)
+
+Information: Operator associated with resources 'Id_comp1/gt_78 (SMC.v:78)' in design 'SMC' breaks the datapath extraction because there is leakage due to truncation on the fanout of its driver 'x0/div_114 (SMC.v:114)'.  (HDL-120)
+
+Information: Operator associated with resources 'Id_comp3/gt_78 (SMC.v:78)' in design 'SMC' breaks the datapath extraction because there is leakage due to truncation on the fanout of its driver 'x4/div_114 (SMC.v:114)'.  (HDL-120)
+
+Information: Operator associated with resources 'Id_comp2/gt_78 (SMC.v:78)' in design 'SMC' breaks the datapath extraction because there is leakage due to truncation on the fanout of its driver 'x2/div_114 (SMC.v:114)'.  (HDL-120)
+
+Information: Operator associated with resources 'x5/gt_97 (SMC.v:97) x5/gt_102 (SMC.v:102)' in design 'SMC' breaks the datapath extraction because there is leakage due to truncation on the fanout of its driver 'x5/sub_94 (SMC.v:94)'.  (HDL-120)
+
+Information: Operator associated with resources 'x4/gt_97 (SMC.v:97) x4/gt_102 (SMC.v:102)' in design 'SMC' breaks the datapath extraction because there is leakage due to truncation on the fanout of its driver 'x4/sub_94 (SMC.v:94)'.  (HDL-120)
+
+Information: Operator associated with resources 'x3/gt_97 (SMC.v:97) x3/gt_102 (SMC.v:102)' in design 'SMC' breaks the datapath extraction because there is leakage due to truncation on the fanout of its driver 'x3/sub_94 (SMC.v:94)'.  (HDL-120)
+
+Information: Operator associated with resources 'x2/gt_97 (SMC.v:97) x2/gt_102 (SMC.v:102)' in design 'SMC' breaks the datapath extraction because there is leakage due to truncation on the fanout of its driver 'x2/sub_94 (SMC.v:94)'.  (HDL-120)
+
+Information: Operator associated with resources 'x1/gt_97 (SMC.v:97) x1/gt_102 (SMC.v:102)' in design 'SMC' breaks the datapath extraction because there is leakage due to truncation on the fanout of its driver 'x1/sub_94 (SMC.v:94)'.  (HDL-120)
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| div_3              | DW_div_uns       | cla                |                |
+| gt_x_4             | DW_cmp           | apparch (area)     |                |
+| lt_x_6             | DW_cmp           | apparch (area)     |                |
+| gt_x_8             | DW_cmp           | apparch (area)     |                |
+| lt_x_10            | DW_cmp           | apparch (area)     |                |
+| gt_x_13            | DW_cmp           | apparch (area)     |                |
+| lt_x_15            | DW_cmp           | apparch (area)     |                |
+| gt_x_17            | DW_cmp           | apparch (area)     |                |
+| lt_x_19            | DW_cmp           | apparch (area)     |                |
+| gt_x_21            | DW_cmp           | apparch (area)     |                |
+| lt_x_23            | DW_cmp           | apparch (area)     |                |
+| gt_x_25            | DW_cmp           | apparch (area)     |                |
+| lt_x_27            | DW_cmp           | apparch (area)     |                |
+| gt_x_29            | DW_cmp           | apparch (area)     |                |
+| lt_x_31            | DW_cmp           | apparch (area)     |                |
+| gt_x_33            | DW_cmp           | apparch (area)     |                |
+| lt_x_35            | DW_cmp           | apparch (area)     |                |
+| gt_x_37            | DW_cmp           | apparch (area)     |                |
+| lt_x_39            | DW_cmp           | apparch (area)     |                |
+| gt_x_41            | DW_cmp           | apparch (area)     |                |
+| lt_x_43            | DW_cmp           | apparch (area)     |                |
+| gt_x_45            | DW_cmp           | apparch (area)     |                |
+| lt_x_47            | DW_cmp           | apparch (area)     |                |
+| gt_x_49            | DW_cmp           | apparch (area)     |                |
+| lt_x_51            | DW_cmp           | apparch (area)     |                |
+| div_55             | DW_div_uns       | cla                |                |
+| div_58             | DW_div_uns       | cla                |                |
+| div_61             | DW_div_uns       | cla                |                |
+| div_64             | DW_div_uns       | cla                |                |
+| div_67             | DW_div_uns       | cla                |                |
+| gt_x_68            | DW_cmp           | apparch (area)     |                |
+| gt_x_69            | DW_cmp           | apparch (area)     |                |
+| gt_x_70            | DW_cmp           | apparch (area)     |                |
+| gt_x_71            | DW_cmp           | apparch (area)     |                |
+| gt_x_72            | DW_cmp           | apparch (area)     |                |
+| gt_x_73            | DW_cmp           | apparch (area)     |                |
+| DP_OP_179J1_122_2340                  |                    |                |
+|                    | DP_OP_179J1_122_2340 | str (area)     |                |
+| DP_OP_180J1_123_3350                  |                    |                |
+|                    | DP_OP_180J1_123_3350 | str (area)     |                |
+|                    |                  | mult_arch: and     |                |
+|                    |                  | mult_arch: benc_radix4              |
+| DP_OP_181J1_124_2340                  |                    |                |
+|                    | DP_OP_181J1_124_2340 | str (area)     |                |
+| DP_OP_182J1_125_3350                  |                    |                |
+|                    | DP_OP_182J1_125_3350 | str (area)     |                |
+|                    |                  | mult_arch: and     |                |
+|                    |                  | mult_arch: benc_radix4              |
+| DP_OP_183J1_126_2340                  |                    |                |
+|                    | DP_OP_183J1_126_2340 | str (area)     |                |
+| DP_OP_184J1_127_3350                  |                    |                |
+|                    | DP_OP_184J1_127_3350 | str (area)     |                |
+|                    |                  | mult_arch: and     |                |
+|                    |                  | mult_arch: benc_radix4              |
+| DP_OP_185J1_128_2340                  |                    |                |
+|                    | DP_OP_185J1_128_2340 | str (area)     |                |
+| DP_OP_186J1_129_3350                  |                    |                |
+|                    | DP_OP_186J1_129_3350 | str (area)     |                |
+|                    |                  | mult_arch: and     |                |
+|                    |                  | mult_arch: benc_radix4              |
+| DP_OP_187J1_130_2340                  |                    |                |
+|                    | DP_OP_187J1_130_2340 | str (area)     |                |
+| DP_OP_188J1_131_3350                  |                    |                |
+|                    | DP_OP_188J1_131_3350 | str (area)     |                |
+|                    |                  | mult_arch: and     |                |
+|                    |                  | mult_arch: benc_radix4              |
+| DP_OP_189J1_132_2340                  |                    |                |
+|                    | DP_OP_189J1_132_2340 | str (area)     |                |
+| DP_OP_190J1_133_3350                  |                    |                |
+|                    | DP_OP_190J1_133_3350 | str (area)     |                |
+|                    |                  | mult_arch: and     |                |
+|                    |                  | mult_arch: benc_radix4              |
+| DP_OP_227J1_134_3125                  |                    |                |
+|                    | DP_OP_227J1_134_3125 | str (area)     |                |
+===============================================================================
+
+1

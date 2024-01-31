@@ -8,7 +8,7 @@
 - Lab05: Matrix Computation (MC)
 - Lab06: CheckSum (CS)
 - Lab07: Polish Notation (PN)
-- Lab08: Series Processiong (SP)
+- Lab08: Series Processing (SP)
 - Lab09: Happy Farm (HF)
 - Lab10: Coverage of Lab09 Happy Farm (HF)
 - Lab Bonus: Formal Verification
